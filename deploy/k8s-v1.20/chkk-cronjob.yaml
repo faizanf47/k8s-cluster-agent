@@ -3,7 +3,7 @@ kind: Namespace
 metadata:
   name: chkk-system
   annotations:
-    chkk.io/name: ClusterGuard
+    chkk.io/name: Availability Guard
     chkk.io/version: v1.0.17
 ---
 apiVersion: v1
@@ -14,7 +14,7 @@ metadata:
     app.kubernetes.io/managed-by: kubectl
     app.kubernetes.io/name: chkk-cluster-context-cronjob
   annotations:
-    chkk.io/name: ClusterGuard
+    chkk.io/name: Availability Guard
     chkk.io/version: v1.0.17
   name: chkk-cluster-context-cronjob
   namespace: chkk-system
@@ -27,7 +27,7 @@ metadata:
     app.kubernetes.io/managed-by: kubectl
     app.kubernetes.io/name: chkk-cluster-context-cronjob
   annotations:
-    chkk.io/name: ClusterGuard
+    chkk.io/name: Availability Guard
     chkk.io/version: v1.0.17
   name: chkk-cluster-context-cronjob
 rules:
@@ -105,7 +105,7 @@ metadata:
     app.kubernetes.io/managed-by: kubectl
     app.kubernetes.io/name: chkk-cluster-context-cronjob
   annotations:
-    chkk.io/name: ClusterGuard
+    chkk.io/name: Availability Guard
     chkk.io/version: v1.0.17
   name: chkk-cluster-context-cronjob
 roleRef:
@@ -140,7 +140,7 @@ metadata:
     app.kubernetes.io/managed-by: kubectl
     app.kubernetes.io/name: chkk-cluster-context-cronjob
   annotations:
-    chkk.io/name: ClusterGuard
+    chkk.io/name: Availability Guard
     chkk.io/version: v1.0.17
   name: chkk-cluster-context-cronjob
   namespace: chkk-system
@@ -153,7 +153,7 @@ metadata:
     app.kubernetes.io/managed-by: kubectl
     app.kubernetes.io/name: chkk-cluster-context-cronjob
   annotations:
-    chkk.io/name: ClusterGuard
+    chkk.io/name: Availability Guard
     chkk.io/version: v1.0.17
   name: chkk-cluster-context-cronjob
   namespace: chkk-system
@@ -166,7 +166,7 @@ metadata:
     app.kubernetes.io/managed-by: kubectl
     app.kubernetes.io/name: chkk-cluster-context-cronjob
   annotations:
-    chkk.io/name: ClusterGuard
+    chkk.io/name: Availability Guard
     chkk.io/version: v1.0.17
   name: chkk-cluster-context-cronjob
   namespace: chkk-system
@@ -177,7 +177,7 @@ spec:
         app.kubernetes.io/instance: chkk-cluster-context-cronjob
         app.kubernetes.io/name: chkk-cluster-context-cronjob
       annotations:
-        chkk.io/name: ClusterGuard
+        chkk.io/name: Availability Guard
         chkk.io/version: v1.0.17
     spec:
       template:
@@ -186,7 +186,7 @@ spec:
             app.kubernetes.io/instance: chkk-cluster-context-cronjob
             app.kubernetes.io/name: chkk-cluster-context-cronjob
           annotations:
-            chkk.io/name: ClusterGuard
+            chkk.io/name: Availability Guard
             chkk.io/version: v1.0.17
         spec:
           automountServiceAccountToken: true
@@ -233,7 +233,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    chkk.io/name: ClusterGuard
+    chkk.io/name: Availability Guard
     chkk.io/version: v1.0.17
   labels:
     app.kubernetes.io/instance: chkk-cluster-agent-manager
@@ -249,7 +249,7 @@ spec:
   template:
     metadata:
       annotations:
-        chkk.io/name: ClusterGuard
+        chkk.io/name: Availability Guard
         chkk.io/version: v1.0.17
       labels:
         app.kubernetes.io/name: chkk-cluster-agent-manager
@@ -293,7 +293,7 @@ metadata:
     app.kubernetes.io/managed-by: kubectl
     app.kubernetes.io/name: chkk-cluster-context-firstscan-job
   annotations:
-    chkk.io/name: ClusterGuard
+    chkk.io/name: Availability Guard
     chkk.io/version: v1.0.17
   name: chkk-cluster-context-firstscan-job
   namespace: chkk-system
@@ -304,7 +304,7 @@ spec:
         app.kubernetes.io/instance: chkk-cluster-context-firstscan-job
         app.kubernetes.io/name: chkk-cluster-context-firstscan-job
       annotations:
-        chkk.io/name: ClusterGuard
+        chkk.io/name: Availability Guard
         chkk.io/version: v1.0.17
     spec:
       automountServiceAccountToken: true
