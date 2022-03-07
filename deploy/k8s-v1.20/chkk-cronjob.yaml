@@ -197,7 +197,7 @@ spec:
                     secretKeyRef:
                       key: CHKK_ACCESS_TOKEN
                       name: chkk-access-token
-              image: public.ecr.aws/j8z4q9j4/chkk-kontext:latest
+              image: public.ecr.aws/j8z4q9j4/chkk-kontext:v1.0.18
               imagePullPolicy: Always
               name: chkk-cluster-context-cronjob
               resources:
@@ -264,7 +264,7 @@ spec:
             secretKeyRef:
               key: CHKK_ACCESS_TOKEN
               name: chkk-access-token
-        image: public.ecr.aws/j8z4q9j4/chkk-cluster-agent-manager:latest
+        image: public.ecr.aws/j8z4q9j4/chkk-cluster-agent-manager:v1.0.18
         imagePullPolicy: Always
         name: chkk-cluster-agent-manager
         resources:
@@ -317,7 +317,7 @@ spec:
                 secretKeyRef:
                   key: CHKK_ACCESS_TOKEN
                   name: chkk-access-token
-          image: public.ecr.aws/j8z4q9j4/chkk-kontext:latest
+          image: public.ecr.aws/j8z4q9j4/chkk-kontext:v1.0.18
           imagePullPolicy: Always
           name: chkk-cluster-context-firstscan-job
           resources:
